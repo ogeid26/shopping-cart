@@ -1,4 +1,4 @@
-import { CartIcon } from "./Icons";
+import { AddToCartIcon, CartIcon } from "./Icons";
 import './Products.css'
 
 
@@ -13,7 +13,7 @@ export function Products ({products}) {
                         alt = {product.title}
                         />
                         <div>
-                        <strong>{product.title}</strong>
+                        <button> <AddToCartIcon /></button>
                         </div>
                         <div>
                         </div>
