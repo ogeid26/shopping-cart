@@ -1,21 +1,12 @@
 import { CartIcon } from "./Icons";
 import './Products.css'
 
-interface Product {
-    id: number;
-    thumbnail: string;
-    title: string;
-  }
 
-  interface ProductsProps {
-    products: Product[];
-  }
-
-export function Products ({products}: ProductsProps) {
+export function Products ({products}) {
     return(
         < main className = 'products' >
             <ul>
-                {products.map(product => (
+                {products.slice(0,10).map(product => (
                     <li key={product.id}>
                         <img
                         src = {product.thumbnail}
